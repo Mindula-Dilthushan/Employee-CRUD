@@ -1,0 +1,29 @@
+.mainSection{
+    margin-top: 03%;
+    display: flex;
+    background-image: linear-gradient(to right top, #00ffe7, #3bffdd, #55ffd3, #6affc9, #7cffc0, #7fffb9, #82feb1, #86fea9, #7dfda0, #73fd98, #69fc8f, #5ffb85);;
+    width: 100%;
+    height: 90vh;
+    border-radius: 40px;
+}
+.formSection{
+    width: 32%;
+    height: 70vh;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.btn{
+    border-color: #00be7b;
+}
+.btn:hover{
+    background-color: #00be7b;
+    color: white;
+    border-color: transparent;
+}
+.tableSection{
+    width: 58%;
+    height: 70vh;
+    margin-left: 50px;
+    margin-top: 75px;
+}
