@@ -28,6 +28,7 @@ func setupResponse(w *http.ResponseWriter, req *http.Request) {
 	(*w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Authorization")
 }
 
+//Save Section------------------------------------------------------------------
 func addEmployee(w http.ResponseWriter, r *http.Request)  {
 
 	setupResponse(&w, r)
@@ -48,6 +49,10 @@ func addEmployee(w http.ResponseWriter, r *http.Request)  {
 	defer insert.Close()
 
 }
+
+
+//Delete Section------------------------------------------------------------------
+
 
 func main()  {
 	//r := mux.NewRouter()

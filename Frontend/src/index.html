@@ -11,7 +11,7 @@
 <section class="mainSection">
 
     <section class="formSection">
-        <form>
+        <form method="post">
             <div class="mb-3">
                 <label for="nic" class="form-label">NIC</label>
                 <input type="text" class="form-control" id="nic" placeholder="Your NIC Number">
@@ -28,7 +28,7 @@
                 <label for="mobile" class="form-label">Mobile</label>
                 <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
             </div>
-            <button type="button" class="btn m-2">Save</button>
+            <button type="button" class="btn m-2" id="btnEmpSave">Save</button>
             <button type="button" class="btn m-2">Update</button>
             <button type="button" class="btn m-2">Delete</button>
             <button type="button" class="btn m-2">Get All</button>
@@ -55,5 +55,6 @@
 
 
 <script src="js/bootstrap.js"></script>
+<script src="js/jquery.min.js"></script>
 </body>
 </html>
