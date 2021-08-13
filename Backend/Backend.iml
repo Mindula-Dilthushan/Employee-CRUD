@@ -3,7 +3,6 @@
   <component name="Go" enabled="true">
     <buildTags>
       <option name="cgo" value="YES" />
-      <option name="compiler" value="gc" />
     </buildTags>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">

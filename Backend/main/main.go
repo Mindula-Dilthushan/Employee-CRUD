@@ -2,14 +2,11 @@ package main
 
 import (
 	"database/sql"
-	//"encoding/json"
 	"fmt"
-	//_ "github.com/go-sql-driver/mysql"
-	//"github.com/gorilla/mux"
-	//"io"
-	//"log"
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/gorilla/mux"
+	"log"
 	"net/http"
-	//"os"
 )
 
 
@@ -55,10 +52,11 @@ func addEmployee(w http.ResponseWriter, r *http.Request)  {
 
 
 func main()  {
-	//r := mux.NewRouter()
-	//fmt.Println("Server Running...")
-	//r.HandleFunc("/api/employee", addEmployee).Methods("POST","OPTIONS")
+	fmt.Println("Welcome To Employee Management System....")
+	fmt.Println("Server Starting")
+	r := mux.NewRouter()
+	fmt.Println("Server Running...")
+	r.HandleFunc("/api/employee", addEmployee).Methods("POST","OPTION")
+	log.Fatal(http.ListenAndServe(":8001",r))
 
-	//log.Fatal(http.ListenAndServe(":8000", r))
-	fmt.Printf("Hello")
 }
